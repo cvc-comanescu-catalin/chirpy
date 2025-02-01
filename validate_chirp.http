@@ -1,0 +1,48 @@
+POST http://localhost:8080/api/validate_chirp HTTP/1.1
+content-type: application/json
+
+{
+    "body": 12,
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+###
+
+POST http://localhost:8080/api/validate_chirp HTTP/1.1
+content-type: application/json
+
+{
+    "body": "sample"
+}
+
+###
+
+POST http://localhost:8080/api/validate_chirp HTTP/1.1
+content-type: application/json
+
+{
+    "body": "This is an opinion I need to share with the world. This is an opinion I need to share with the world. This is an opinion I need to share with the world. This is an opinion I need to share with the world. This is an opinion I need to share with the world"
+}
+
+###
+
+POST http://localhost:8080/api/validate_chirp HTTP/1.1
+content-type: application/json
+
+{
+  "body": "This is a kerfuffle opinion I need to share with the world"
+}
+
+###
+
+POST http://localhost:8080/api/users HTTP/1.1
+content-type: application/json
+
+{
+  "email": "cvc.comanescu.catalin@gmail.com"
+}
+
+###
+
+POST http://localhost:8080/admin/reset HTTP/1.1
+content-type: application/json
