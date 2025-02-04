@@ -5,6 +5,10 @@ go mod init to create a Go module for your project
 go mod init github.com/cvc-comanescu-catalin/chirpy
 
 go build -o out && ./out
+go test ./...
+
+generate secret
+openssl rand -base64 64
 
 Steps
 Create a new http.ServeMux

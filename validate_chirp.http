@@ -39,6 +39,17 @@ POST http://localhost:8080/api/users HTTP/1.1
 content-type: application/json
 
 {
+  "password": "04234",
+  "email": "cvc.comanescu.catalin@gmail.com"
+}
+
+###
+
+POST http://localhost:8080/api/login HTTP/1.1
+content-type: application/json
+
+{
+  "password": "04234",
   "email": "cvc.comanescu.catalin@gmail.com"
 }
 
@@ -51,10 +62,10 @@ content-type: application/json
 
 POST http://localhost:8080/api/chirps HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjaGlycHktYWNjZXNzIiwic3ViIjoiN2UyYWNiMTgtN2I1MS00NWM0LThkMzYtODBkOTZlMWVjMzhmIiwiZXhwIjoxNzM4NjIxMzYwLCJpYXQiOjE3Mzg2MTc3NjB9.MV3-oLxsubIo3g-8Axqx2rYvjbUjryc_fMR3L0neUfc
 
 {
-  "body": "Hello, world! hhhhh",
-  "user_id": "f97b2568-1fcb-4214-a67f-2e3bf71720ab"
+  "body": "Hello, world! hhhhh"
 }
 
 ###
